@@ -1,0 +1,22 @@
+{
+  "name": "perso-portfolio-website",
+  "version": "1.0.0",
+  "description": "Responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vic5995/PERSO-Portfolio-website.git"
+  },
+  "author": "Victoire Lenglart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vic5995/PERSO-Portfolio-website/issues"
+  },
+  "homepage": "https://github.com/Vic5995/PERSO-Portfolio-website#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
