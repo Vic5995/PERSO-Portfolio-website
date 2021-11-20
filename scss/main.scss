@@ -2,7 +2,8 @@
 @import 'menu';
 @import 'mobile';
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 *, ::after, ::before {
   box-sizing: border-box;
@@ -14,14 +15,14 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
+  font-family: 'MontSerrat', Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3 {
@@ -30,6 +31,9 @@ h1, h2, h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-transform: uppercase;
   }
 
   &.sm-heading {
@@ -37,6 +41,8 @@ h1, h2, h3 {
     padding: 0.2rem 1rem;
     background: rgba(lighten($color: $primary-color, $amount: 2), 0.7);
     border-radius: $border-radius;
+    letter-spacing: 2px;
+    font-weight: 300;
   }
 }
 
@@ -52,7 +58,7 @@ header {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  @include linearGradientText();
 }
 
 main {
@@ -69,6 +75,10 @@ main {
       &:hover {
         color: $secondary-color;
         @include easeOut();
+
+        &:nth-child(even) {
+          color: $secondary-color-bis;
+        }
       }
     }
   }
@@ -86,8 +96,7 @@ main {
   gap: 30px;
   grid-template-areas: 
   'bioimage bio bio'
-  'subtitle subtitle subtitle'
-  'job1 job2 job3';
+  'work-exp work-exp work-exp';
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -97,11 +106,15 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: $secondary-color 3px solid;
+  background: 
+    url('../img/portrait.jpg') padding-box,
+    $linear-gradient border-box;
+  border-radius: 50%;
+  border: 3px solid transparent;
 }
 
 .bio, .work-exp {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .bio {
@@ -109,26 +122,24 @@ main {
 }
 
 .work-exp {
-  grid-area: subtitle;
-}
+  grid-area: work-exp;
 
-.job-1 {
-  grid-area: job1;
-}
+  .text-secondary {
+    margin-bottom: 1em;
+    display: block;
+  }
 
-.job-2 {
-  grid-area: job2;
-}
-
-.job-3 {
-  grid-area: job3;
+  &-display {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .job {
-  background: lighten($color: $primary-color, $amount: 5);
+  background: $linear-gradient-bis; 
   padding: 0.5rem;
-  border-bottom: $secondary-color 5px solid;
   border-radius: $border-radius;
+  @include boxShadow;
 }
 
 // Work/Projects
@@ -169,7 +180,7 @@ main {
 
     &:hover {
       padding: 0.5rem 1.5rem;
-      background: $secondary-color;
+      background: $linear-gradient;
       color: set-text-color($secondary-color);
 
       span {
@@ -187,7 +198,7 @@ main {
   margin-bottom: 0.3rem;
   border-radius: $border-radius;
   &:hover {
-    background-color: $secondary-color;
+    background: $linear-gradient;
     color: set-text-color($secondary-color);
   }
 }

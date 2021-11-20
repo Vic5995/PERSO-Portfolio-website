@@ -46,7 +46,11 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url('../img/portrait-small.jpg');
+      background: 
+        url('../img/portrait.jpg') padding-box,
+        $linear-gradient border-box;
+      border-radius: 50%;
+      border: 3px solid transparent;
       width: 150px;
       height: 150px;
     }
@@ -56,10 +60,7 @@
     grid-template-areas: 
     'bioimage'
     'bio'
-    'subtitle'
-    'job1'
-    'job2'
-    'job3';
+    'work-exp';
     grid-template-columns: 1fr;
   }
 
