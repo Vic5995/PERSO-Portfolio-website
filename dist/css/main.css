@@ -56,7 +56,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg") padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
+      background: padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
       border-radius: 50%;
       border: solid 3px transparent; }
   .menu .nav-item {
@@ -106,8 +106,10 @@
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem; }
     main .lg-heading {
+      font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav, div.menu-branding {
@@ -124,11 +126,11 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait.jpg") padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
+      background: padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
       border-radius: 50%;
       border: 3px solid transparent;
-      width: 150px;
-      height: 150px; }
+      width: calc(25vh - 30px);
+      height: calc(25vh - 30px); }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'work-exp';
     grid-template-columns: 1fr; }
@@ -218,18 +220,19 @@ main {
 .about-info {
   display: grid;
   gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'work-exp work-exp work-exp';
+  grid-template-areas: 'bioimage bio bio' 'bioimage work-exp work-exp';
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
-  width: 250px;
-  height: 250px;
+  height: 80%;
   grid-area: bioimage;
   margin: auto;
+  /*border-radius: 50%;
+  background: 
+    padding-box,
+    $linear-gradient border-box;
   border-radius: 50%;
-  background: url("../img/portrait.jpg") padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
-  border-radius: 50%;
-  border: 3px solid transparent; }
+  border: 3px solid transparent;*/ }
 
 .bio, .work-exp {
   font-size: 1.2rem; }
@@ -323,8 +326,10 @@ main {
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    padding: 4rem 2rem 2rem 2rem; }
     main .lg-heading {
+      font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav, div.menu-branding {
@@ -341,11 +346,11 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait.jpg") padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
+      background: padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
       border-radius: 50%;
       border: 3px solid transparent;
-      width: 150px;
-      height: 150px; }
+      width: calc(25vh - 30px);
+      height: calc(25vh - 30px); }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'work-exp';
     grid-template-columns: 1fr; }

@@ -96,21 +96,20 @@ main {
   gap: 30px;
   grid-template-areas: 
   'bioimage bio bio'
-  'work-exp work-exp work-exp';
+  'bioimage work-exp work-exp';
   grid-template-columns: repeat(3, 1fr);
 }
 
 .bio-image {
-  width: 250px;
-  height: 250px;
+  height: 80%;
   grid-area: bioimage;
   margin: auto;
-  border-radius: 50%;
+  /*border-radius: 50%;
   background: 
-    url('../img/portrait.jpg') padding-box,
+    padding-box,
     $linear-gradient border-box;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 3px solid transparent;*/
 }
 
 .bio, .work-exp {
