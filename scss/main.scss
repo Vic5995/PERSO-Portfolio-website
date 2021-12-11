@@ -102,7 +102,7 @@ main {
 }
 
 .bio-image {
-  height: 100%;
+  height: 200px;
   width: 200px;
   margin: auto;
   border-radius: 50%;
@@ -132,6 +132,11 @@ main {
 
 .skills {
   grid-area: skills;
+
+  img {
+    height: 80px;
+    margin: 0 5px;
+  }
 }
 
 .work-exp {
