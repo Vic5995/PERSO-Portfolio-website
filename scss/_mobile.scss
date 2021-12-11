@@ -62,7 +62,20 @@
     grid-template-areas: 
     'bioimage'
     'bio'
+    'skillimage'
+    'skills'
     'work-exp';
+    grid-template-columns: 1fr;
+  }
+
+  .bio h3 {
+    text-align: center;
+  }
+
+  .work-exp-display {
+    grid-template-areas: 
+    'job1'
+    'job2';
     grid-template-columns: 1fr;
   }
 

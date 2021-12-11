@@ -132,7 +132,12 @@
       width: calc(25vh - 30px);
       height: calc(25vh - 30px); }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'work-exp';
+    grid-template-areas: 'bioimage' 'bio' 'skillimage' 'skills' 'work-exp';
+    grid-template-columns: 1fr; }
+  .bio h3 {
+    text-align: center; }
+  .work-exp-display {
+    grid-template-areas: 'job1' 'job2';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
@@ -220,25 +225,33 @@ main {
 .about-info {
   display: grid;
   gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'bioimage work-exp work-exp';
+  grid-template-areas: 'bio bio bioimage' 'skillimage skills skills' 'work-exp work-exp work-exp';
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
-  height: 80%;
-  grid-area: bioimage;
+  height: 100%;
+  width: 200px;
   margin: auto;
-  /*border-radius: 50%;
-  background: 
-    padding-box,
-    $linear-gradient border-box;
   border-radius: 50%;
-  border: 3px solid transparent;*/ }
+  background: padding-box, linear-gradient(90deg, #ea8d8d 0%, #a890fe 100%) border-box;
+  border-radius: 50%;
+  border: 3px solid transparent; }
 
-.bio, .work-exp {
+#bio-image {
+  grid-area: bioimage; }
+
+#skill-image {
+  grid-area: skillimage; }
+
+.bio, .work-exp, .skills {
   font-size: 1.2rem; }
 
 .bio {
-  grid-area: bio; }
+  grid-area: bio;
+  text-align: right; }
+
+.skills {
+  grid-area: skills; }
 
 .work-exp {
   grid-area: work-exp; }
@@ -246,16 +259,32 @@ main {
     margin-bottom: 1em;
     display: block; }
   .work-exp-display {
-    display: flex;
-    gap: 30px; }
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 'job1 job2';
+    grid-template-columns: repeat(2, 1fr); }
 
 .job {
   background: linear-gradient(90deg, #f1eab9 0%, #ff8c8c 100%);
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .job h6 {
+    margin: 0.5rem 0; }
+  .job p {
+    text-align: center;
+    margin: 0; }
+
+.job1 {
+  grid-area: job1; }
+
+.job2 {
+  grid-area: job2; }
 
 .projects {
   display: grid;
@@ -352,7 +381,12 @@ main {
       width: calc(25vh - 30px);
       height: calc(25vh - 30px); }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'work-exp';
+    grid-template-areas: 'bioimage' 'bio' 'skillimage' 'skills' 'work-exp';
+    grid-template-columns: 1fr; }
+  .bio h3 {
+    text-align: center; }
+  .work-exp-display {
+    grid-template-areas: 'job1' 'job2';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
