@@ -19,11 +19,6 @@ body {
   line-height: 1.5;
 }
 
-video {
-  width: 400px;
-  height: auto;
-}
-
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
@@ -209,6 +204,65 @@ main {
       border-color: $secondary-color;
       @include easeOut
     }
+  }
+}
+
+#project1 {
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'pres pres pres'
+  'text1 text1 video1'
+  'video2 text2 text2'
+  'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+
+  h4 {
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+
+  .skills {
+    width: max-content;
+    margin: auto;
+  }
+
+  .pres {
+    grid-area: pres;
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-header {
+    grid-area: header;
+  }
+
+  .text1 {
+    text-align: right;
+    grid-area: text1;
+  }
+
+  .video1 {
+    grid-area: video1;
+  }
+
+  .text2 {
+    grid-area: text2;
+  }
+
+  .video2 {
+    grid-area: video2;
+  }
+
+  .icons {
+    grid-area: icons;
+    margin: auto;
   }
 }
 

@@ -142,7 +142,11 @@
     grid-template-areas: 'job1' 'job2';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #project1 {
+    grid-template-areas: 'header' 'pres' 'video1' 'text1' 'video2' 'text2' 'icons'; }
+    #project1 .text1 {
+      text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -173,10 +177,6 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(231, 231, 231, 0.9); }
-
-video {
-  width: 400px;
-  height: auto; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', Arial, Helvetica, sans-serif; }
@@ -313,6 +313,39 @@ main {
       border-color: #ea8d8d;
       transition: all 0.5s ease-out; }
 
+#project1 {
+  display: grid;
+  grid-template-areas: 'header header header' 'pres pres pres' 'text1 text1 video1' 'video2 text2 text2' 'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center; }
+  #project1 h4 {
+    margin: 5px 0;
+    text-transform: uppercase; }
+  #project1 .skills {
+    width: max-content;
+    margin: auto; }
+  #project1 .pres {
+    grid-area: pres;
+    text-align: center; }
+  #project1 video {
+    width: 100%;
+    height: auto; }
+  #project1 .project-header {
+    grid-area: header; }
+  #project1 .text1 {
+    text-align: right;
+    grid-area: text1; }
+  #project1 .video1 {
+    grid-area: video1; }
+  #project1 .text2 {
+    grid-area: text2; }
+  #project1 .video2 {
+    grid-area: video2; }
+  #project1 .icons {
+    grid-area: icons;
+    margin: auto; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -405,7 +438,11 @@ main {
     grid-template-areas: 'job1' 'job2';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #project1 {
+    grid-template-areas: 'header' 'pres' 'video1' 'text1' 'video2' 'text2' 'icons'; }
+    #project1 .text1 {
+      text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

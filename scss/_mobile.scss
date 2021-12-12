@@ -86,6 +86,20 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #project1 {
+    grid-template-areas: 
+    'header'
+    'pres'
+    'video1'
+    'text1'
+    'video2'
+    'text2'
+    'icons';
+    .text1 {
+      text-align: center;
+    }
+  }
 }
 // Smarphone
 
