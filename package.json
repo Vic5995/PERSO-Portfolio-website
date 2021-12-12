@@ -1,24 +1,25 @@
 {
-  "name": "perso-portfolio-website",
-  "version": "1.0.0",
-  "description": "Personal portfolio website",
-  "main": "index.js",
-  "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vic5995/PERSO-Portfolio-website.git"
-  },
-  "author": "Victoire Lenglart",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vic5995/PERSO-Portfolio-website/issues"
-  },
-  "homepage": "https://github.com/Vic5995/PERSO-Portfolio-website#readme",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "gh-pages": "^3.2.3",
-    "node-sass": "^6.0.1"
-  }
+	"name": "perso-portfolio-website",
+	"version": "1.0.0",
+	"description": "Personal portfolio website",
+	"main": "index.js",
+	"homepage": "https://vic5995.github.io/PERSO-Portfolio-website",
+	"scripts": {
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
+		"deploy": "gh-pages -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Vic5995/PERSO-Portfolio-website.git"
+	},
+	"author": "Victoire Lenglart",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Vic5995/PERSO-Portfolio-website/issues"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"gh-pages": "^3.2.3",
+		"node-sass": "^6.0.1"
+	}
 }
