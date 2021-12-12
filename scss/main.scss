@@ -19,6 +19,11 @@ body {
   line-height: 1.5;
 }
 
+video {
+  width: 400px;
+  height: auto;
+}
+
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +48,13 @@ h1, h2, h3 {
     border-radius: $border-radius;
     letter-spacing: 2px;
     font-weight: 300;
+  }
+
+  &.project-heading {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
   }
 }
 

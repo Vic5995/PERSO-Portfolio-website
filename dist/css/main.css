@@ -112,6 +112,8 @@
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
+    main .project-heading {
+      font-size: 3rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
@@ -159,7 +161,7 @@ body {
   font-family: 'MontSerrat', Arial, Helvetica, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../res/img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -171,6 +173,10 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(231, 231, 231, 0.9); }
+
+video {
+  width: 400px;
+  height: auto; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', Arial, Helvetica, sans-serif; }
@@ -190,6 +196,11 @@ h1, h2, h3 {
     border-radius: 10px;
     letter-spacing: 2px;
     font-weight: 300; }
+  h1.project-heading, h2.project-heading, h3.project-heading {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
 
 a {
   color: #fff;
@@ -364,6 +375,8 @@ main {
       font-size: 4rem;
       line-height: 1;
       margin-bottom: 1rem; }
+    main .project-heading {
+      font-size: 3rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
     width: 100%;
