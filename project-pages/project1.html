@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/main.css">
+
+  <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script defer src="../js/main.js"></script>
+
+  <title>Covid Dashboard</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+
+      <div class="menu-branding">
+        <img src="../res/img/portrait-2.png" alt="Victoire Lenglart" class="portrait"></img>
+      </div>
+
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about.html" class="nav-link">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="/work.html" class="nav-link">My Work</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="/contact.html" class="nav-link">How To Reach Me</a>
+        </li> -->
+      </ul>
+
+    </nav>
+  </header>
+
+  <main id="project1">
+    <div class="project-header">
+      <h2 class="project-heading">Covid Student Dashboard</h2>
+      <h3 class="sm-heading">School project</h3>
+      <div class="skills">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="icon Java">
+        <img src="https://seeklogo.com/images/S/sqlite-logo-5E9F462E6A-seeklogo.com.png" alt="icon SQLite">
+      </div>
+    </div>
+
+    <p class="pres">
+      This dashboard project was proposed to us in the first year of engineering school as part of the course on updating
+      skills in development and design. The goal was to create a console application where teachers could consult the status
+      of student attendance during COVID periods. It also needed a form part where students could fill in their change of
+      status.
+      <br>
+      This project was to be done alone.
+    </p>
+    
+    <div class="text1">
+      <h4 class="text-secondary">Teacher side</h4>
+      For the teacher part, the objective is to display the state of the attendance and absences of the students. When the
+      teacher arrives at the main page, he/she can access different levels of precision on the students' sample. For example,
+      at first all the students are displayed, then by class and then by year.
+      Each time, we see the students who are sick (Covid or not), if they are on campus or not or if their absence is due to a
+      professional reason.</div>
+
+    <video class="video1" controls>
+      <source src="../res/videos/project1-teacher.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="text2">
+      <h4 class="text-secondary">Student side</h4>
+      When you are a student, you start with an authentication part (which is not completed on this project). Once connected,
+      the student has several questions to update his status: is he/she sick or not? On campus or not? Is he/she absent for
+      another reason? The possibility to leave a comment is also available. Once the form is validated, the results are stored
+      in a persistent database.</div>
+
+    
+    <video class="video2" controls>
+      <source src="../res/videos/project1-student.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="icons">
+      <a href="https://github.com/Vic5995/IMT_A1_ACDC_Dashboard" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+    </div>
+    
+
+
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2021
+  </footer>
+
+</body>
+
+</html>
