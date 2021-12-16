@@ -1,6 +1,7 @@
 @import 'config';
 @import 'menu';
 @import 'mobile';
+@import "about";
 
 //@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -17,6 +18,9 @@ body {
   margin: 0;
   font-family: 'MontSerrat', Arial, Helvetica, sans-serif;
   line-height: 1.5;
+}
+hr {
+  color: set-text-color($primary-color);
 }
 
 // Headings
@@ -98,7 +102,7 @@ main {
   }
 }
 
-.about-info {
+/*.about-info {
   display: grid;
   gap: 30px;
   grid-template-areas: 
@@ -185,9 +189,14 @@ main {
 }
 .job2 {
   grid-area: job2;
-}
+}*/
 
 // Work/Projects
+#work {
+  h3 {
+    margin: 10px 0px;
+  }
+}
 
 .projects {
   display: grid;
