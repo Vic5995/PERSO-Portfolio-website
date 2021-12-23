@@ -96,9 +96,17 @@
     'video2'
     'text2'
     'icons';
+    grid-template-columns: 1fr;
     .text1 {
       text-align: center;
     }
+  }
+  #project2 .pictures{
+    grid-template-areas:
+    'pic1'
+    'pic2'
+    'pic3';
+    grid-template-columns: 1fr;
   }
 }
 // Smarphone
@@ -110,5 +118,9 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  #project2 .pictures img{
+      width: 250px;
   }
 }

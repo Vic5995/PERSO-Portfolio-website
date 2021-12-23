@@ -216,6 +216,22 @@ main {
   }
 }
 
+.project-page {
+  h4 {
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
 #project1 {
   display: grid;
   grid-template-areas: 
@@ -227,16 +243,6 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: center;
-
-  h4 {
-    margin: 5px 0;
-    text-transform: uppercase;
-  }
-
-  .skills {
-    width: max-content;
-    margin: auto;
-  }
 
   .pres {
     grid-area: pres;
@@ -273,6 +279,37 @@ main {
     grid-area: icons;
     margin: auto;
   }
+}
+
+#project2 {
+  .pictures {
+    margin: auto;
+    width: max-content;
+    display: grid;
+    grid-template-areas:
+    'pic1 pic2'
+    'pic1 pic3';
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+    img {
+      width: 300px;
+      height: auto;
+    }
+    #pic1 {
+      grid-area: pic1;
+    }
+    #pic2 {
+      grid-area: pic2;
+    }
+    #pic3 {
+      grid-area: pic3;
+    }
+  }
+
+  .pres, .icons{
+    text-align: center;
+  }
+
 }
 
 // Contact page
