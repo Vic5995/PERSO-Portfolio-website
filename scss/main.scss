@@ -309,7 +309,45 @@ main {
   .pres, .icons{
     text-align: center;
   }
+}
 
+#project3 {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'pic1 skills skills'
+  'pic2 pres pres'
+  'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  > img {
+    width: 400px;
+    height: auto;
+  }
+
+  .pres, .icons{
+    text-align: center;
+  }
+  .project-header {
+    grid-area: header;
+  }
+  .pic1 {
+    grid-area: pic1;
+  }
+  .pic2 {
+    grid-area: pic2;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .pres {
+    grid-area: pres;
+    text-align: left;
+  }
+  .icons {
+    grid-area: icons;
+  }
 }
 
 // Contact page

@@ -150,14 +150,21 @@
       text-align: center; }
   #project2 .pictures {
     grid-template-areas: 'pic1' 'pic2' 'pic3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #project3 {
+    grid-template-areas: 'header' 'skills' 'pres' 'pic1' 'pic2' 'icons';
+    grid-template-columns: 1fr; }
+    #project3 > img {
+      margin: auto; }
+    #project3 .pres {
+      text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; }
-  #project2 .pictures img {
+  #project2 .pictures img, #project3 > img {
     width: 250px; } }
 
 /**
@@ -474,6 +481,30 @@ main {
 #project2 .pres, #project2 .icons {
   text-align: center; }
 
+#project3 {
+  display: grid;
+  grid-template-areas: 'header header header' 'pic1 skills skills' 'pic2 pres pres' 'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; }
+  #project3 > img {
+    width: 400px;
+    height: auto; }
+  #project3 .pres, #project3 .icons {
+    text-align: center; }
+  #project3 .project-header {
+    grid-area: header; }
+  #project3 .pic1 {
+    grid-area: pic1; }
+  #project3 .pic2 {
+    grid-area: pic2; }
+  #project3 .skills {
+    grid-area: skills; }
+  #project3 .pres {
+    grid-area: pres;
+    text-align: left; }
+  #project3 .icons {
+    grid-area: icons; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -574,12 +605,19 @@ main {
       text-align: center; }
   #project2 .pictures {
     grid-template-areas: 'pic1' 'pic2' 'pic3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #project3 {
+    grid-template-areas: 'header' 'skills' 'pres' 'pic1' 'pic2' 'icons';
+    grid-template-columns: 1fr; }
+    #project3 > img {
+      margin: auto; }
+    #project3 .pres {
+      text-align: center; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; }
-  #project2 .pictures img {
+  #project2 .pictures img, #project3 > img {
     width: 250px; } }

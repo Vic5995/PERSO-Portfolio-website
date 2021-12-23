@@ -108,6 +108,23 @@
     'pic3';
     grid-template-columns: 1fr;
   }
+  #project3 {
+    grid-template-areas:
+    'header'
+    'skills'
+    'pres'
+    'pic1'
+    'pic2'
+    'icons';
+    grid-template-columns: 1fr;
+
+    > img {
+      margin: auto;
+    }
+    .pres {
+      text-align: center;
+    }
+  }
 }
 // Smarphone
 
@@ -120,7 +137,7 @@
     grid-template-columns: 1fr;
   }
 
-  #project2 .pictures img{
+  #project2 .pictures img, #project3 > img{
       width: 250px;
   }
 }
