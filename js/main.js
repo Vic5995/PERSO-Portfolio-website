@@ -31,5 +31,6 @@ function toggleMenu() {
 
 		// set the menu state
 		showMenu = false;
-	}
+  }
 }
+
