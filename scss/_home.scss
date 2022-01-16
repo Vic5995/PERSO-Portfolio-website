@@ -1,0 +1,25 @@
+/**
+Stylesheet for index page
+ */
+@import "config";
+
+main#home {
+  overflow: hidden;
+  h1 {
+    margin-top: 20vh;
+  }
+
+  .tmp-card {
+    margin: 10px auto;
+    width: max-content;
+    text-align: center;
+    background: $linear-gradient-3;
+    padding: 1rem;
+    border-radius: $border-radius;
+    @include boxShadow;
+
+    a {
+      color: $secondary-color;
+    }
+  }
+}

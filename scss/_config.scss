@@ -3,6 +3,7 @@ $secondary-color: #ea8d8d;
 $secondary-color-bis: #a890fe;
 $linear-gradient: linear-gradient(90deg, $secondary-color 0%, $secondary-color-bis 100%);
 $linear-gradient-bis: linear-gradient(90deg, #f1eab9 0%, #ff8c8c 100%);
+$linear-gradient-3: linear-gradient(90deg, #00b7ff 0%, #ffffc7 100%);
 $show-home-image: true;
 $home-image: url(../res/img/background.jpg);
 $background-opacity: 0.9;
@@ -40,14 +41,15 @@ $border-radius: 10px;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-    
+
       &:after {
         content: '';
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 100%;
         height: 100%;
+        margin: 0;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
