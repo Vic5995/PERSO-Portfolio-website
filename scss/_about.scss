@@ -21,8 +21,7 @@ Style for about page
   border-radius: 50%;
   background:
           padding-box,
-          $linear-gradient border-box;
-  border-radius: 50%;
+          $linear-gradient-1 border-box;
   border: 3px solid transparent;
 }
 
@@ -50,6 +49,11 @@ Style for about page
     height: 80px;
     margin: 0 5px;
   }
+
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .work-exp {
@@ -70,7 +74,7 @@ Style for about page
 }
 
 .job {
-  background: $linear-gradient-bis;
+  background: $linear-gradient-2;
   padding: 1rem;
   border-radius: $border-radius;
   @include boxShadow;
@@ -92,3 +96,86 @@ Style for about page
 .job2 {
   grid-area: job2;
 }
+
+// modal window
+.modal-btn {
+  background: transparent;
+  border: 2px solid set-text-color($primary-color);
+  border-radius: $border-radius;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 8px 14px;
+  font-size: 12px;
+  margin: 10px auto;
+  display: block;
+  min-width: 150px;
+  cursor: pointer;
+  transition: color 0.2s ease-out, border-color 0.2s ease-out;
+
+  &:hover {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}
+
+.modal-container {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+  }
+
+  .modal {
+    width: 95%;
+    max-width: calc(70% - 200px);
+    min-width: 300px;
+    padding: 30px;
+    max-height: 80vh;
+    background: $linear-gradient-4;
+    position: absolute;
+    border-radius: $border-radius;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0); //calc(-50% + 50px));
+    transition: opacity 0.4s ease-out; //, transform 0.4s ease-out;
+    overflow-y: auto;
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+  }
+  .close-modal {
+    background: transparent;
+    padding: 8px 10px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: set-text-color($primary-color);
+  }
+  &.active {
+    visibility: visible;
+
+    .overlay {
+      opacity: 1;
+      transition: opacity 0.4s ease-out;
+    }
+    .modal {
+      opacity: 1;
+      //transform: translate(-50%, -50%);
+      transition: opacity 0.4s ease-out; //, transform 0.4s 0.2s ease-out;
+    }
+  }
+}
+

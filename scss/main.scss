@@ -9,6 +9,8 @@
 
 *, ::after, ::before {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -188,7 +190,7 @@ main {
 // Work/Projects
 #work {
   h3 {
-    margin: 10px 0px;
+    margin: 10px 0;
   }
 }
 
@@ -362,7 +364,7 @@ main {
 
     &:hover {
       padding: 0.5rem 1.5rem;
-      background: $linear-gradient;
+      background: $linear-gradient-1;
       color: set-text-color($secondary-color);
 
       span {
@@ -380,7 +382,7 @@ main {
   margin-bottom: 0.3rem;
   border-radius: $border-radius;
   &:hover {
-    background: $linear-gradient;
+    background: $linear-gradient-1;
     color: set-text-color($secondary-color);
   }
 }

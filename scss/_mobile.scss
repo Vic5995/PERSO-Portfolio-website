@@ -4,6 +4,11 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  main#home {
+    .tmp-card {
+      width: max-content;
+    }
+  }
 }
 // Desktops & Laptops
 
@@ -54,16 +59,12 @@
     .portrait {
       background: 
         padding-box,
-        $linear-gradient border-box;
+        $linear-gradient-1 border-box;
       border-radius: 50%;
       border: 3px solid transparent;
       width: calc(25vh - 30px);
       height: calc(25vh - 30px);
     }
-  }
-
-  main#home .tmp-card {
-    width: auto;
   }
 
   .about-info {

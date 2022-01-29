@@ -2,126 +2,223 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-  <!-- <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script> -->
-  <script defer src="js/main.js"></script>
+    <!-- <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script> -->
+    <script defer src="js/main.js"></script>
 
-  <title>About me</title>
+    <title>About me</title>
 </head>
 
 <body>
 
-  <header>
+<div id="modal-container-ubi" class="modal-container">
+    <div class="overlay modal-trigger-ubi"></div>
+    <div class="modal" role="dialog" aria-labelledby="modal-ubi-title" aria-describedby="modal-ubi-desc">
+        <button class="close-modal modal-trigger-ubi"
+                aria-label="close modal"><i class="far fa-times-circle fa-2x"></i></button>
+        <h1 id="modal-ubi-title">UBI SOLUTIONS</h1>
+        <h3>Android Developer</h3>
+        <p id="modal-ubi-desc">🏁 First step in my career as a software engineer 🏁
+        </p>
+        <br>
+        <p>
+            🤖 I worked in the Lille team as an <b>Android developer</b>.
+            <br>
+            <br>
+            🐣 This professional experience marked my beginning in the digital world and this year has been a huge
+            source of
+            enrichment :
+            <br>
+            📱 I learned <b>mobile development</b> from scratch. Since UbiSolutions works with Android applications, I
+            mobilized
+            my knowledge in <b>Java</b> to gradually move towards <b>Kotlin</b>.
+        </p>
+        <br>
+        <p>
+            Among the applications I worked on, I can mention:
+            <br>
+            <br>
+            👜 A <b>bag tracking application</b>, with updates based on the scan location of the status of that bag
+            (communication with a remote database)
+            <br>
+            🌡 An <b>inventory application</b> using barcode and RFID chip scanning
+            <br>
+            📦 A pairing application (use to associate a RFID chip to a box and save this information in a remote
+            database
+        </p>
+        <br>
+        <p>
+            In parallel to these developments:
+            <br>
+            <br>
+            🙋🏼 I participated in <b>weekly check-ins with customers</b>
+            <br>
+            📑 I wrote <b>documentation</b> for my colleagues
+            <br>
+            🏡 I had my first telecommuting experience (Covid-19) and learned how to best use all the communication
+            tools
+            available.</p>
+    </div>
+</div>
+
+<div id="modal-container-dgfip" class="modal-container">
+    <div class="overlay modal-trigger-dgfip"></div>
+    <div class="modal" role="dialog" aria-labelledby="modal-dgfip-title" aria-describedby="modal-dgfip-desc">
+        <button class="close-modal modal-trigger-dgfip"
+                aria-label="close modal"><i class="far fa-times-circle fa-2x"></i></button>
+        <h1 id="modal-dgfip-title">DGFIP</h1>
+        <h3>Software Engineer in training</h3>
+        <p id="modal-dgfip-desc">🔥 My current experience where I wear several hats as a web developer or data analyst
+            🔥</p>
+        <br>
+        <p>
+
+            1️⃣ During my 1st year, after understanding the digital environment in which I was going to evolve, I was
+            able to acquire new skills:
+            <br>
+            <br>
+            🖥 reinforcement of my basic skills in <b>web development HTML, CSS and JS</b>
+            🛠 learning and using new frameworks such as <b>Bootstrap</b> and <b>Vue.JS</b>
+        </p>
+        <br>
+        <p>
+
+            2️⃣ Currently in my 2nd year, my goal set with my tutor is to explore other technologies. I decided to
+            choose a topic that was previously unknown to me: <b>data analysis</b>.
+            <br>
+            <br>
+            🐍 I learned the <b>Python</b> language and the libraries used for data processing like <b>Numpy</b> or
+            <b>Pandas</b>. I also
+            studied how to render this data with the proper visualization tools like <b>Matplotlib.plot</b> and
+            <b>Seaborn</b>.
+            <br>
+            <br>
+            📱 My next topic for this year is the use of a <b>cross-platform</b> framework (Flutter or ReactNative) to
+                                                                            continue
+            the development of an application used internally.</p>
+    </div>
+</div>
+
+<header>
     <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
     </div>
 
     <nav class="menu">
 
-      <div class="menu-branding">
-        <img src="res/img/portrait-2.png" alt="Victoire Lenglart" class="portrait"></img>
-      </div>
+        <div class="menu-branding">
+            <img src="res/img/portrait-2.png" alt="Victoire Lenglart" class="portrait"/>
+        </div>
 
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item current">
-          <a href="about.html" class="nav-link">About me</a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">My Work</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a href="/contact.html" class="nav-link">How To Reach Me</a>
-        </li> -->
-      </ul>
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item current">
+                <a href="about.html" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+                <a href="work.html" class="nav-link">My Work</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="/contact.html" class="nav-link">How To Reach Me</a>
+            </li> -->
+        </ul>
 
     </nav>
-  </header>
+</header>
 
-  <main id="about">
+<main id="about">
     <h1 class="lg-heading">
-      About <span class="text-secondary">Me</span>
+        About <span class="text-secondary">Me</span>
     </h1>
 
     <h2 class="sm-heading">
-      Let me tell you a few things...
+        Let me tell you a few things...
     </h2>
 
     <div class="about-info">
-      <img id="bio-image" src="res/img/portrait-1.png" alt="Victoire Lenglart" class="bio-image">
+        <img id="bio-image" src="res/img/portrait-1.png" alt="Victoire Lenglart" class="bio-image">
 
-      <div class="bio">
-        <h3 class="text-secondary">... ABOUT ME</h3>
-        <p>My name is Victoire and I am in a work-study at IMT Atlantique (Nantes, France). I'm in a software engineering
-        degree (2nd year); I spend half of the time at school, the other half in a company.
-        <br>
-        Feel free to check my work experiences below!
-        </p>
-      </div>
-
-      <img id="skill-image" src="res/img/portrait-3.png" alt="Victoire Lenglart" class="bio-image">
-
-      <div class="skills">
-        <h3 class="text-secondary">... ABOUT MY SKILL SET</h3>
-        <h4>Web development</h4>
-
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="icon HTML">
-
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="icon CSS">
-
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="icon JavaScript">
-
-        <img class="small-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png" alt="icon Sass">
-
-        <img class="small-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="icon Bootstrap">
-
-        <h4>Data Analysis</h4>
-
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="icon Pyhton">
-        
-        <h4>Object Oriented Programming</h4>
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="icon Java">
-
-      </div>
-
-      <div class="work-exp">
-        <h3 class="text-secondary">... ABOUT MY WORK EXPERIENCE IN COMPUTER SCIENCES</h3>
-        
-        <div class="work-exp-display">
-          <div class="job job-1">
-            <h3>UbiSolutions</h3>
-            <h6>Android Developer</h6>
-            <p>My first job in the sector of computer sciences! It was part of a work-study program during my Computer Sciences 2-year degree. My mission were to develop Android applications on mobile devices.</p>
-          </div>
-          
-          <div class="job job-2">
-            <h3>DGFIP (National taxe services)</h3>
-            <h6>Vue.JS Developer & Data Analyst</h6>
-            <p>This is my current job. I have had different missions, such as working with Vue.JS (first year) or working on Data Science (second year). It is a work-study program during my Computer Engineering degree</p>
-          </div>
+        <div class="bio">
+            <h3 class="text-secondary">... ABOUT ME</h3>
+            <p>My name is Victoire and I am in a work-study at IMT Atlantique (Nantes, France). I'm in a software
+                engineering
+                degree (2nd year); I spend half of the time at school, the other half in a company.
+                <br>
+                Feel free to check my work experiences below!
+            </p>
         </div>
 
-        
-      </div>
+        <img id="skill-image" src="res/img/portrait-3.png" alt="Victoire Lenglart" class="bio-image">
+
+        <div class="skills">
+            <h3 class="text-secondary">... ABOUT MY SKILL SET</h3>
+            <h4>Web development</h4>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="icon HTML">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="icon CSS">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="icon JavaScript">
+
+            <img class="small-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968358.png" alt="icon Sass">
+
+            <img class="small-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="icon Bootstrap">
+
+            <h4>Data Analysis</h4>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="icon Pyhton">
+
+            <h4>Object Oriented Programming</h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="icon Java">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="icon Pyhton">
+
+        </div>
+
+        <div class="work-exp">
+            <h3 class="text-secondary">... ABOUT MY WORK EXPERIENCE IN COMPUTER SCIENCES</h3>
+
+            <div class="work-exp-display">
+                <div class="job job-1">
+                    <h3>UbiSolutions</h3>
+                    <h6>Android Developer</h6>
+                    <p>My first job in the sector of computer sciences! It was part of a work-study program during my
+                        Computer Sciences 2-year degree. My mission were to develop Android applications on mobile
+                        devices.</p>
+                    <button class="modal-btn modal-trigger-ubi">More Info</button>
+                </div>
+
+                <div class="job job-2">
+                    <h3>DGFIP (National tax services)</h3>
+                    <h6>Software Engineer in training</h6>
+                    <p>This is my current job. I have had different missions, such as working with Vue.JS (first year)
+                        or working on Data Science (second year). It is a work-study program during my Computer
+                        Engineering degree</p>
+                    <button class="modal-btn modal-trigger-dgfip">More Info</button>
+                </div>
+            </div>
+
+
+        </div>
 
     </div>
 
-  </main>
+</main>
 
-  <footer id="main-footer">
-    Copyright &copy; 2021
-  </footer>
+<footer id="main-footer">
+    Copyright &copy; 2022
+</footer>
 
 </body>
 

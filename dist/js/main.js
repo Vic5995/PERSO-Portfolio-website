@@ -34,3 +34,22 @@ function toggleMenu() {
   }
 }
 
+// Modal mechanism
+
+const modalContainerUbi = document.querySelector("#modal-container-ubi");
+const modalTriggersUbi = document.querySelectorAll(".modal-trigger-ubi");
+
+modalTriggersUbi.forEach(trigger => trigger.addEventListener("click", toggleUbiModal))
+
+function toggleUbiModal() {
+    modalContainerUbi.classList.toggle("active")
+}
+
+const modalContainerDgfip = document.querySelector("#modal-container-dgfip");
+const modalTriggersDgfip = document.querySelectorAll(".modal-trigger-dgfip");
+
+modalTriggersDgfip.forEach(trigger => trigger.addEventListener("click", toggleDgfipModal))
+
+function toggleDgfipModal() {
+    modalContainerDgfip.classList.toggle("active")
+}
