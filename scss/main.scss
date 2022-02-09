@@ -98,95 +98,6 @@ main {
   }
 }
 
-/*.about-info {
-  display: grid;
-  gap: 30px;
-  grid-template-areas: 
-  'bio bio bioimage'
-  'skillimage skills skills'
-  'work-exp work-exp work-exp';
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.bio-image {
-  height: 200px;
-  width: 200px;
-  margin: auto;
-  border-radius: 50%;
-  background: 
-    padding-box,
-    $linear-gradient border-box;
-  border-radius: 50%;
-  border: 3px solid transparent;
-}
-
-#bio-image {
-  grid-area: bioimage;
-}
-
-#skill-image {
-  grid-area: skillimage;
-}
-
-.bio, .work-exp, .skills {
-  font-size: 1.2rem;
-}
-
-.bio {
-  grid-area: bio;
-  text-align: right;
-}
-
-.skills {
-  grid-area: skills;
-
-  img {
-    height: 80px;
-    margin: 0 5px;
-  }
-}
-
-.work-exp {
-  grid-area: work-exp;
-
-  .text-secondary {
-    margin-bottom: 1em;
-    display: block;
-  }
-
-  &-display {
-    display: grid;
-    gap: 30px;
-    grid-template-areas: 
-    'job1 job2';
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.job {
-  background: $linear-gradient-bis; 
-  padding: 1rem;
-  border-radius: $border-radius;
-  @include boxShadow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h6 {
-    margin: 0.5rem 0;
-  }
-  p {
-    text-align: center;
-    margin: 0;
-  }
-}
-
-.job1 {
-  grid-area: job1;
-}
-.job2 {
-  grid-area: job2;
-}*/
-
 // Work/Projects
 #work {
   h3 {
@@ -228,6 +139,11 @@ main {
   }
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 #project1 {
   display: grid;
   grid-template-areas: 
@@ -243,11 +159,6 @@ main {
   .pres {
     grid-area: pres;
     text-align: center;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
   }
 
   .project-header {
@@ -307,7 +218,7 @@ main {
   }
 }
 
-#project3 {
+#project3, #project4 {
   display: grid;
   grid-template-areas:
   'header header header'
