@@ -1,3 +1,4 @@
+@import "config";
 // Wide screen
 
 @include mediaXl {
@@ -127,6 +128,22 @@
       margin: auto;
     }
     .pres {
+      text-align: center;
+    }
+  }
+
+  #project4 {
+    grid-template-areas:
+    'header'
+    'skills'
+    'text1'
+    'video1'
+    'text2'
+    'video2'
+    'icons';
+    grid-template-columns: 1fr;
+
+    .text1, .text2 {
       text-align: center;
     }
   }

@@ -159,6 +159,11 @@
     #project3 > img {
       margin: auto; }
     #project3 .pres {
+      text-align: center; }
+  #project4 {
+    grid-template-areas: 'header' 'skills' 'text1' 'video1' 'text2' 'video2' 'icons';
+    grid-template-columns: 1fr; }
+    #project4 .text1, #project4 .text2 {
       text-align: center; } }
 
 @media screen and (max-width: 500px) {
@@ -408,94 +413,6 @@ main {
         main .icons a:hover:nth-child(even) {
           color: #a890fe; }
 
-/*.about-info {
-  display: grid;
-  gap: 30px;
-  grid-template-areas: 
-  'bio bio bioimage'
-  'skillimage skills skills'
-  'work-exp work-exp work-exp';
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.bio-image {
-  height: 200px;
-  width: 200px;
-  margin: auto;
-  border-radius: 50%;
-  background: 
-    padding-box,
-    $linear-gradient border-box;
-  border-radius: 50%;
-  border: 3px solid transparent;
-}
-
-#bio-image {
-  grid-area: bioimage;
-}
-
-#skill-image {
-  grid-area: skillimage;
-}
-
-.bio, .work-exp, .skills {
-  font-size: 1.2rem;
-}
-
-.bio {
-  grid-area: bio;
-  text-align: right;
-}
-
-.skills {
-  grid-area: skills;
-
-  img {
-    height: 80px;
-    margin: 0 5px;
-  }
-}
-
-.work-exp {
-  grid-area: work-exp;
-
-  .text-secondary {
-    margin-bottom: 1em;
-    display: block;
-  }
-
-  &-display {
-    display: grid;
-    gap: 30px;
-    grid-template-areas: 
-    'job1 job2';
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.job {
-  background: $linear-gradient-bis; 
-  padding: 1rem;
-  border-radius: $border-radius;
-  @include boxShadow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h6 {
-    margin: 0.5rem 0;
-  }
-  p {
-    text-align: center;
-    margin: 0;
-  }
-}
-
-.job1 {
-  grid-area: job1;
-}
-.job2 {
-  grid-area: job2;
-}*/
 #work h3 {
   margin: 10px 0; }
 
@@ -523,6 +440,10 @@ main {
   justify-content: center;
   margin: auto; }
 
+video {
+  width: 100%;
+  height: auto; }
+
 #project1 {
   display: grid;
   grid-template-areas: 'header header header' 'pres pres pres' 'text1 text1 video1' 'video2 text2 text2' 'icons icons icons';
@@ -532,9 +453,6 @@ main {
   #project1 .pres {
     grid-area: pres;
     text-align: center; }
-  #project1 video {
-    width: 100%;
-    height: auto; }
   #project1 .project-header {
     grid-area: header; }
   #project1 .text1 {
@@ -592,6 +510,37 @@ main {
     grid-area: pres;
     text-align: left; }
   #project3 .icons {
+    grid-area: icons; }
+
+#project4 {
+  display: grid;
+  grid-template-areas: 'header header header' 'skills skills skills' 'video1 text1 text1' 'text2 text2 video2' 'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px; }
+  #project4 > img {
+    width: 400px;
+    height: auto; }
+  #project4 .pres, #project4 .icons {
+    text-align: center; }
+  #project4 .project-header {
+    grid-area: header; }
+  #project4 .skills {
+    grid-area: skills; }
+  #project4 .text1 {
+    grid-area: text1;
+    text-align: left; }
+  #project4 .text2 {
+    grid-area: text2;
+    text-align: right; }
+  #project4 .video1 {
+    grid-area: video1;
+    justify-self: center;
+    height: 280px;
+    width: 280px; }
+  #project4 .video2 {
+    grid-area: video2; }
+  #project4 .icons {
     grid-area: icons; }
 
 .boxes {
@@ -703,6 +652,11 @@ main {
     #project3 > img {
       margin: auto; }
     #project3 .pres {
+      text-align: center; }
+  #project4 {
+    grid-template-areas: 'header' 'skills' 'text1' 'video1' 'text2' 'video2' 'icons';
+    grid-template-columns: 1fr; }
+    #project4 .text1, #project4 .text2 {
       text-align: center; } }
 
 @media screen and (max-width: 500px) {

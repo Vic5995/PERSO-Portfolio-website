@@ -218,7 +218,7 @@ video {
   }
 }
 
-#project3, #project4 {
+#project3 {
   display: grid;
   grid-template-areas:
   'header header header'
@@ -251,6 +251,54 @@ video {
   .pres {
     grid-area: pres;
     text-align: left;
+  }
+  .icons {
+    grid-area: icons;
+  }
+}
+
+#project4 {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'skills skills skills'
+  'video1 text1 text1'
+  'text2 text2 video2'
+  'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+
+  > img {
+    width: 400px;
+    height: auto;
+  }
+
+  .pres, .icons{
+    text-align: center;
+  }
+  .project-header {
+    grid-area: header;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .text1 {
+    grid-area: text1;
+    text-align: left;
+  }
+  .text2 {
+     grid-area: text2;
+     text-align: right;
+   }
+  .video1 {
+    grid-area: video1;
+    justify-self: center;
+    height: 280px;
+    width: 280px;
+  }
+  .video2 {
+    grid-area: video2;
   }
   .icons {
     grid-area: icons;
