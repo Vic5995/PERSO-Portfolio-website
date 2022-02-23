@@ -1,3 +1,5 @@
+import { projects } from "./projects.js";
+
 // Select DOM items
 
 const menuBtn = document.querySelector('.menu-btn');
@@ -53,3 +55,32 @@ modalTriggersDgfip.forEach(trigger => trigger.addEventListener("click", toggleDg
 function toggleDgfipModal() {
     modalContainerDgfip.classList.toggle("active")
 }
+
+// Work page => generate HTML code
+
+const projectContainer = document.querySelector('#work');
+
+projects.forEach( project => {
+    let el = `<h3 class="text-secondary">${project.category}</h3>
+    <div class="projects">`
+
+    console.log(el)
+
+    project.items.forEach( mItem => {
+        el += `<div class="item">
+        <a href="${mItem.imgHref}" target="_blank">
+          <img src="${mItem.imgSrc}" alt="project">
+        </a>
+        <a href="${mItem.projectPage}" class="btn-light more-info">
+          <i class="fas fa-eye"></i> See More
+        </a>
+        <a href="${mItem.gitUrl}" target="_blank" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>`
+    })
+    console.log(el)
+    el += "</div><hr>"
+    projectContainer.innerHTML += el
+    console.log(projectContainer.innerHTML)
+})
