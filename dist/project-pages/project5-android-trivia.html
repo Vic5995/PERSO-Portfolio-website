@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script> -->
+    <script type="module" defer src="../js/main.js"></script>
+
+    <title>Android Trivia App</title>
+</head>
+<body>
+<header>
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+
+        <div class="menu-branding">
+            <img src="../res/img/portrait-2.png" alt="Victoire Lenglart" class="portrait">
+        </div>
+
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="../about.html" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+                <a href="../work.html" class="nav-link">My Work</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="/contact.html" class="nav-link">How To Reach Me</a>
+            </li> -->
+        </ul>
+
+    </nav>
+</header>
+
+<main id="project5" class="project-page">
+    <div class="project-header">
+        <h2 class="project-heading">Trivia App</h2>
+        <h3 class="sm-heading">Mobile Project</h3>
+    </div>
+
+    <div class="skills">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174836.png" alt="icon Android">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="icon Java">
+    </div>
+
+    <p class="text1">
+        I have done this project several times, this time I present it as a mobile application. The first implementation was done through a bootcamp on Udemy.
+        <br>
+        <br>
+        When I took back the application, I removed the UI that I didn't like too much and for now, I stayed on the default UI.
+        <br>
+        <br>
+        Once the UI was "restored", I wanted to explore the possibilities of the API I use to get the questions. Instead of having a default query, I created a form allowing the user to set up his game.
+    </p>
+
+    <p class="text2">
+        When I made this change, I got a weird behavior from the application. While the game was running (the player had clicked on START), the application kept returning to the home screen.
+        <br>
+        <br>
+        With the help of the debugger and StackOverflow (and the logs too), I found the cause of this behavior. For some requests, the API returns a different code if it doesn't have enough questions for the parameters that are passed to it.
+        <br>
+        <br>
+        For the moment the solution is that when we receive this error code, we launch the default request and we inform the user with a snackbar that the parameters are the default ones.
+    </p>
+
+    <p class="text3">
+        I've listed several things I'd like to implement on this application on GitHub.
+        <br>
+        <br>
+        The next step will be to allow the user to answer multiple choice questions.
+        I'm also thinking of saving the game data (with ROOM in particular) to allow the player his statistics.
+    </p>
+
+    <img class="pic1" src="../res/img/projects/project-5-android-trivia/trivia-app-screenshot-1.png"
+         alt="Todo app screenshot">
+
+    <img class="pic2" src="../res/img/projects/project-5-android-trivia/trivia-app-screenshot-1.png"
+         alt="Todo app screenshot">
+
+    <!--<video class="video1" controls>
+        <source src="../res/videos/trivia-app-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>-->
+
+    <div class="icons">
+        <a href="https://github.com/Vic5995/PERSO-Android-trivia-app" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+</main>
+
+<footer id="main-footer">
+    Copyright &copy; 2022
+</footer>
+
+</body>
+</html>

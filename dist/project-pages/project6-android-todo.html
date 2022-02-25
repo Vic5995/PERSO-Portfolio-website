@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- <script defer src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script> -->
+    <script type="module" defer src="../js/main.js"></script>
+
+    <title>Android Todo App</title>
+</head>
+<body>
+<header>
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+
+        <div class="menu-branding">
+            <img src="../res/img/portrait-2.png" alt="Victoire Lenglart" class="portrait">
+        </div>
+
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="../about.html" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+                <a href="../work.html" class="nav-link">My Work</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="/contact.html" class="nav-link">How To Reach Me</a>
+            </li> -->
+        </ul>
+
+    </nav>
+</header>
+
+<main id="project6" class="project-page">
+    <div class="project-header">
+        <h2 class="project-heading">Todo App</h2>
+        <h3 class="sm-heading">Mobile Project</h3>
+    </div>
+
+    <div class="skills">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174836.png" alt="icon Android">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="icon Java">
+    </div>
+
+    <p class="text1">
+        The design of this application was found on Figma.
+        <br>
+        <br>
+        This application has been a real learning experience. I was able to review what I already knew about the ROOM library for data management in an application.
+        <br>
+        <br>
+        I discovered the LiveData and the ViewModel to transmit information between the different parts of the application.
+        <br>
+        <br>
+        For the moment, the application allows saving tasks and to find them when we come back to the application (thanks to data persistence). You can mark it as completed, and you can also delete a task.
+    </p>
+
+    <p class="text2">
+        For the future, I'm thinking of enriching the tasks model by adding tags to sort the list of tasks.
+        An interesting post would be to add subtasks.
+        <br>
+        <br>
+        There is also some work to do on the UI, for the deletion of a task, for the moment I choose a button, but it is more natural to use a swipe to delete or archive a task.
+        <br>
+        <br>
+        Then, connecting to a remote database can be a challenge as well as sending notifications when the deadline approaches.
+    </p>
+
+
+    <img class="pic1" src="../res/img/projects/project-6-android-todo/todo-app-screenshot-1.png"
+         alt="Todo app screenshot">
+
+    <img class="pic2" src="../res/img/projects/project-6-android-todo/todo-app-screenshot-2.png"
+         alt="Todo app screenshot">
+    
+    <video class="video1" controls>
+        <source src="../res/videos/todo-app-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="icons">
+        <a href="https://github.com/Vic5995/PERSO-Android-todo-app" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </div>
+</main>
+
+<footer id="main-footer">
+    Copyright &copy; 2022
+</footer>
+
+</body>
+</html>

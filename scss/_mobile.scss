@@ -147,6 +147,42 @@
       text-align: center;
     }
   }
+
+  #project5 {
+    grid-template-areas:
+    'header'
+    'skills'
+    'text1'
+    'pic1'
+    'text2'
+    'pic2'
+    'text3'
+    'icons';
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    .text1, .text2 {
+      text-align: center;
+    }
+  }
+
+  #project6 {
+    grid-template-areas:
+    'header'
+    'skills'
+    'text1'
+    'pic1'
+    'text2'
+    'pic2'
+    'video1'
+    'icons';
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    .text1, .text2 {
+      text-align: center;
+    }
+  }
 }
 // Smartphone
 

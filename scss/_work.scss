@@ -1,0 +1,314 @@
+@import "config";
+
+#work {
+  h3 {
+    margin: 10px 0;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    border-radius: $border-radius;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut
+    }
+  }
+}
+
+.project-page {
+  h4 {
+    margin: 5px 0;
+    text-transform: uppercase;
+  }
+
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+#project1 {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'pres pres pres'
+  'text1 text1 video1'
+  'video2 text2 text2'
+  'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+
+  .pres {
+    grid-area: pres;
+    text-align: center;
+  }
+
+  .project-header {
+    grid-area: header;
+  }
+
+  .text1 {
+    text-align: right;
+    grid-area: text1;
+  }
+
+  .video1 {
+    grid-area: video1;
+  }
+
+  .text2 {
+    grid-area: text2;
+  }
+
+  .video2 {
+    grid-area: video2;
+  }
+
+  .icons {
+    grid-area: icons;
+    margin: auto;
+  }
+}
+
+#project2 {
+  .pictures {
+    margin: auto;
+    width: max-content;
+    display: grid;
+    grid-template-areas:
+    'pic1 pic2'
+    'pic1 pic3';
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+    img {
+      width: 300px;
+      height: auto;
+    }
+    #pic1 {
+      grid-area: pic1;
+    }
+    #pic2 {
+      grid-area: pic2;
+    }
+    #pic3 {
+      grid-area: pic3;
+    }
+  }
+
+  .pres, .icons{
+    text-align: center;
+  }
+}
+
+#project3 {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'pic1 skills skills'
+  'pic2 pres pres'
+  'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  > img {
+    width: 400px;
+    height: auto;
+  }
+
+  .pres, .icons{
+    text-align: center;
+  }
+  .project-header {
+    grid-area: header;
+  }
+  .pic1 {
+    grid-area: pic1;
+  }
+  .pic2 {
+    grid-area: pic2;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .pres {
+    grid-area: pres;
+    text-align: left;
+  }
+  .icons {
+    grid-area: icons;
+  }
+}
+
+#project4 {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'skills skills skills'
+  'video1 text1 text1'
+  'text2 text2 video2'
+  'icons icons icons';
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+
+  > img {
+    width: 400px;
+    height: auto;
+  }
+
+  .pres, .icons {
+    text-align: center;
+  }
+
+  .project-header {
+    grid-area: header;
+  }
+
+  .skills {
+    grid-area: skills;
+  }
+
+  .text1 {
+    grid-area: text1;
+    text-align: left;
+  }
+
+  .text2 {
+    grid-area: text2;
+    text-align: right;
+  }
+
+  .video1 {
+    grid-area: video1;
+    justify-self: center;
+    height: 280px;
+    width: 280px;
+  }
+
+  .video2 {
+    grid-area: video2;
+  }
+
+  .icons {
+    grid-area: icons;
+  }
+}
+
+  #project5 {
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+  'header header header'
+  'skills skills skills'
+  'pic1 text1 text1'
+  'pic2 text2 text2'
+  'text3 text3 text3'
+  'icons icons icons';
+    grid-template-columns: 150px repeat(2, 1fr);
+    gap: 20px;
+
+    > img {
+      width: 150px;
+      height: auto;
+    }
+
+    .pres, .icons{
+      text-align: center;
+    }
+    .project-header {
+      grid-area: header;
+    }
+    .pic1 {
+      grid-area: pic1;
+    }
+    .pic2 {
+      grid-area: pic2;
+    }
+    .skills {
+      grid-area: skills;
+    }
+    .icons {
+      grid-area: icons;
+    }
+    .text1 {
+      grid-area: text1;
+    }
+    .text2 {
+      grid-area: text2;
+    }
+    .text3 {
+      text-align: center;
+      grid-area: text3;
+    }
+    .icons {
+      grid-area: icons;
+    }
+  }
+
+#project6 {
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+  'header header header'
+  'skills skills skills'
+  'pic1 text1 video1'
+  'pic2 text2 video1'
+  'icons icons icons';
+  grid-template-columns: 150px 1fr 300px;
+  gap: 20px;
+
+  > img {
+    width: 150px;
+    height: auto;
+  }
+
+  .pres, .icons{
+    text-align: center;
+  }
+  .project-header {
+    grid-area: header;
+  }
+  .pic1 {
+    grid-area: pic1;
+  }
+  .pic2 {
+    grid-area: pic2;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .icons {
+    grid-area: icons;
+  }
+  .text1 {
+    grid-area: text1;
+  }
+  .text2 {
+    grid-area: text2;
+  }
+  .video1 {
+    grid-area: video1;
+  }
+  .icons {
+    grid-area: icons;
+  }
+}
